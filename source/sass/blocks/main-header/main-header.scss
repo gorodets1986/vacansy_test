@@ -1,0 +1,157 @@
+.main-header {
+  min-height: 480px;
+  background-color: #778385;
+  background-image: url(header_fill.png);
+  padding-top: 10px;
+  position: relative;
+}
+
+.main-header__text {
+  @include montserratbold;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin-bottom: 46px;
+  margin-top: 58px;
+}
+
+.main-header__text--orange {
+  color: #fe8057;
+}
+
+.main-header__description {
+  @include opensans;
+  color: #f1f1f1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
+
+.main-header__register {
+  @include montserrat;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  margin-bottom: 60px;
+  margin-top: 66px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #fe8057;
+}
+
+.main-header__down,
+.main-header__details {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    background-image: url(header_tablet.png);
+    padding-bottom: 234px;
+  }
+
+  .main-header__text {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42px;
+    margin-left: 434px;
+    margin-top: 124px;
+    text-align: left;
+    letter-spacing: 0.72px;
+  }
+
+  .main-header__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-left: 540px;
+    margin-top: 41px;
+    text-align: left;
+  }
+
+  .main-header__register {
+    width: 305px;
+    margin-left: 540px;
+    margin-top: 40px;
+  }
+
+  .main-header__down {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    background-image: url(header_desktop.jpg);
+    padding-bottom: 305px;
+  }
+
+  .main-header__text {
+    font-size: 42px;
+    line-height: 48px;
+    margin-left: 650px;
+    margin-top: 122px;
+    letter-spacing: 1.26px;
+  }
+
+  .main-header__description {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 866px;
+    margin-top: 43px;
+    position: relative;
+  }
+
+  .main-header__description::before {
+    content: "";
+    background-image: url(stars.svg);
+    width: 179px;
+    height: 65px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -190px;
+  }
+
+  .main-header__register {
+    margin-left: 866px;
+    margin-top: 55px;
+  }
+
+  .main-header__register:active {
+    border: 2px solid #fe8057;
+    border-radius: 4px;
+    background-color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  .main-header__down {
+    bottom: 50px;
+  }
+
+  .main-header__details {
+    @include montserratsemibold;
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 46%;
+    bottom: 10px;
+  }
+}

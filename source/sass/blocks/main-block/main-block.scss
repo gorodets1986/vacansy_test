@@ -1,0 +1,151 @@
+.main-block__teachers {
+  display: none;
+}
+
+.main-block__link--hover {
+  display: none;
+}
+
+.main-block__select {
+  @include montserrat;
+  color: #4e93e1;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  text-align: center;
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.main-block__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.main-block__item {
+  width: 261px;
+  height: 450px;
+}
+
+.main-block__link {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+.main-block__image {
+  height: 100%;
+}
+
+.main-block__program {
+  @include montserrat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(#000000, 0.5);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  padding: 29px 50px 32px 49px;
+}
+
+.main-block__program--hover {
+  @include montserrat;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  padding: 360px 123px 32px 122px;
+  margin: 0;
+  background-color: rgba(#000000, 0.3);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-block {
+    padding-top: 111px;
+  }
+
+  .main-block__teachers {
+    @include montserratsemibold;
+    display: block;
+    border-radius: 26px;
+    border: 2px solid #fe8057;
+    width: 560px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    color: #fe8057;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .main-block__select {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    margin-top: 110px;
+    margin-bottom: 81px;
+  }
+
+  .main-block__item {
+    width: 304px;
+  }
+
+  .main-block__program {
+    font-size: 20px;
+  }
+
+  .main-block__image {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-block {
+    padding-top: 120px;
+  }
+
+  .main-block__teachers {
+    @include montserratsemibold;
+    border-radius: 30px;
+    width: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .main-block__select {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    margin-top: 140px;
+    margin-bottom: 100px;
+  }
+
+  .main-block__item {
+    width: 413px;
+  }
+
+  .main-block__link:hover .main-block__program {
+    display: none;
+  }
+
+  .main-block__link:hover .main-block__program--hover {
+    display: block;
+    border-top: 4px solid #66d0fa;
+  }
+
+  .main-block__program {
+    padding: 29px 96px 32px 98px;
+  }
+}

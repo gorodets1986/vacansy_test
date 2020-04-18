@@ -1,0 +1,53 @@
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desktop-nav__link {
+    @include montserrat;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    position: relative;
+  }
+
+  .desktop-nav__link::before {
+    content: "";
+    background-image: url(telefon.svg);
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+
+  .desktop-nav__link:hover {
+    border-bottom: 2px solid #fe8057;
+  }
+
+  .desktop-nav__link--teachers {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+    border-radius: 4px;
+    border: 2px solid #fe8057;
+    display: block;
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    text-align: center;
+  }
+
+  .desktop-nav__link--teachers:active {
+    background-color: #fe8057;
+  }
+}

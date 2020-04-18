@@ -1,0 +1,752 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../../fonts/opensans.woff"), url("../../fonts/opensans.woff2"); }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-Regular.ttf"); }
+@font-face {
+  font-family: "MontserratBold";
+  src: url("../../fonts/Montserrat-ExtraBold.ttf"); }
+@font-face {
+  font-family: "MontserratMedium";
+  src: url("../../fonts/Montserrat-Medium.ttf"); }
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: url("../../fonts/Montserrat-SemiBold.ttf"); }
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+.desktop-nav {
+  display: none; }
+
+@media (min-width: 1280px) {
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+  .desktop-nav__link {
+    font-family: Montserrat, "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    position: relative; }
+
+  .desktop-nav__link::before {
+    content: "";
+    background-image: url(telefon.svg);
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px; }
+
+  .desktop-nav__link:hover {
+    border-bottom: 2px solid #fe8057; }
+
+  .desktop-nav__link--teachers {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+    border-radius: 4px;
+    border: 2px solid #fe8057;
+    display: block;
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    text-align: center; }
+
+  .desktop-nav__link--teachers:active {
+    background-color: #fe8057; } }
+.main-block__teachers {
+  display: none; }
+
+.main-block__link--hover {
+  display: none; }
+
+.main-block__select {
+  font-family: Montserrat, "Arial", sans-serif;
+  color: #4e93e1;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  text-align: center;
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 50px; }
+
+.main-block__list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px; }
+
+.main-block__item {
+  width: 261px;
+  height: 450px; }
+
+.main-block__link {
+  display: block;
+  position: relative;
+  height: 100%; }
+
+.main-block__image {
+  height: 100%; }
+
+.main-block__program {
+  font-family: Montserrat, "Arial", sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  padding: 29px 50px 32px 49px; }
+
+.main-block__program--hover {
+  font-family: Montserrat, "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  padding: 360px 123px 32px 122px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+@media (min-width: 952px) {
+  .main-block {
+    padding-top: 111px; }
+
+  .main-block__teachers {
+    font-family: MontserratSemiBold, "Arial", sans-serif;
+    display: block;
+    border-radius: 26px;
+    border: 2px solid #fe8057;
+    width: 560px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    color: #fe8057;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center; }
+
+  .main-block__select {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    margin-top: 110px;
+    margin-bottom: 81px; }
+
+  .main-block__item {
+    width: 304px; }
+
+  .main-block__program {
+    font-size: 20px; }
+
+  .main-block__image {
+    width: 100%; } }
+@media (min-width: 1280px) {
+  .main-block {
+    padding-top: 120px; }
+
+  .main-block__teachers {
+    font-family: MontserratSemiBold, "Arial", sans-serif;
+    border-radius: 30px;
+    width: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px; }
+
+  .main-block__select {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    margin-top: 140px;
+    margin-bottom: 100px; }
+
+  .main-block__item {
+    width: 413px; }
+
+  .main-block__link:hover .main-block__program {
+    display: none; }
+
+  .main-block__link:hover .main-block__program--hover {
+    display: block;
+    border-top: 4px solid #66d0fa; }
+
+  .main-block__program {
+    padding: 29px 96px 32px 98px; } }
+.main-header {
+  min-height: 480px;
+  background-color: #778385;
+  background-image: url(header_fill.png);
+  padding-top: 10px;
+  position: relative; }
+
+.main-header__text {
+  font-family: MontserratBold, "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin-bottom: 46px;
+  margin-top: 58px; }
+
+.main-header__text--orange {
+  color: #fe8057; }
+
+.main-header__description {
+  font-family: "OpenSans", "Arial", sans-serif;
+  color: #f1f1f1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center; }
+
+.main-header__register {
+  font-family: Montserrat, "Arial", sans-serif;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  margin-bottom: 60px;
+  margin-top: 66px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #fe8057; }
+
+.main-header__down,
+.main-header__details {
+  display: none; }
+
+@media (min-width: 952px) {
+  .main-header {
+    background-image: url(header_tablet.png);
+    padding-bottom: 234px; }
+
+  .main-header__text {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42px;
+    margin-left: 434px;
+    margin-top: 124px;
+    text-align: left;
+    letter-spacing: 0.72px; }
+
+  .main-header__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-left: 540px;
+    margin-top: 41px;
+    text-align: left; }
+
+  .main-header__register {
+    width: 305px;
+    margin-left: 540px;
+    margin-top: 40px; }
+
+  .main-header__down {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 52px; } }
+@media (min-width: 1280px) {
+  .main-header {
+    background-image: url(header_desktop.jpg);
+    padding-bottom: 305px; }
+
+  .main-header__text {
+    font-size: 42px;
+    line-height: 48px;
+    margin-left: 650px;
+    margin-top: 122px;
+    letter-spacing: 1.26px; }
+
+  .main-header__description {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 866px;
+    margin-top: 43px;
+    position: relative; }
+
+  .main-header__description::before {
+    content: "";
+    background-image: url(stars.svg);
+    width: 179px;
+    height: 65px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -190px; }
+
+  .main-header__register {
+    margin-left: 866px;
+    margin-top: 55px; }
+
+  .main-header__register:active {
+    border: 2px solid #fe8057;
+    border-radius: 4px;
+    background-color: #ffffff;
+    text-shadow: 1px 1px 1px #000; }
+
+  .main-header__down {
+    bottom: 50px; }
+
+  .main-header__details {
+    font-family: MontserratSemiBold, "Arial", sans-serif;
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 46%;
+    bottom: 10px; } }
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.main-nav__city {
+  font-family: Montserrat, "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400; }
+
+.main-nav__logo {
+  display: block; }
+
+.main-nav__burger {
+  display: block; }
+
+@media (min-width: 952px) {
+  .main-nav {
+    display: none; } }
+.tablet-nav {
+  display: none; }
+
+@media (min-width: 952px) {
+  .tablet-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; }
+
+  .tablet-nav__link {
+    font-family: Montserrat, "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative; }
+
+  .tablet-nav__link:hover {
+    border-bottom: 2px solid #fe8057; }
+
+  .tablet-nav__link::before {
+    content: "";
+    background-image: url("telefon.svg");
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px; }
+
+  .tablet-nav__link--teachers {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 2px solid #fe8057;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
+    text-align: center; }
+
+  .tablet-menu {
+    position: absolute;
+    right: -100px;
+    top: 0; }
+
+  .tablet-menu__burger {
+    width: 31px;
+    height: 32px;
+    position: absolute;
+    top: 28px;
+    right: 50px; }
+
+  .tablet-users {
+    list-style-type: none;
+    padding-left: 0;
+    width: 164px;
+    border-radius: 10px 0 10px 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 87px;
+    right: 47px;
+    padding-left: 29px;
+    padding-top: 33px;
+    padding-bottom: 32px;
+    margin: 0; }
+
+  .tablet-users__item {
+    margin-bottom: 20px; }
+
+  .tablet-users__item:last-of-type {
+    margin-bottom: 0; }
+
+  .tablet-users__link {
+    font-family: Montserrat, "Arial", sans-serif;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500; } }
+@media (min-width: 1280px) {
+  .tablet-nav {
+    display: none; } }
+.toggle-menu {
+  background-color: #25262a;
+  padding-top: 10px;
+  padding-bottom: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.toggle-menu__main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.toggle-menu__city {
+  font-size: 0;
+  width: 35px; }
+
+.info {
+  list-style-type: none;
+  padding-left: 0;
+  border-bottom: 1px solid #696969;
+  margin-top: 45px; }
+
+.info__item {
+  margin-bottom: 34px;
+  text-align: center; }
+
+.info__link {
+  font-family: Montserrat, "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400; }
+
+.users {
+  list-style-type: none;
+  padding-left: 0; }
+
+.users__item {
+  margin-top: 30px;
+  text-align: center; }
+
+.users__link {
+  font-family: Montserrat, "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400; }
+
+.users__link--teachers {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 4px;
+  border: 2px solid #fe8057;
+  width: 200px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.visually-hidden {
+  display: none; }
+
+.container {
+  margin: 0 auto;
+  width: 304px; }
+
+@media (min-width: 952px) {
+  .container {
+    width: 952px;
+    padding: 0; }
+
+  .main-nav {
+    min-height: 88px; } }
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+@mixin opensans {
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+@mixin montserrat {
+  font-family: Montserrat, "Arial", sans-serif;
+}
+
+@mixin montserratbold {
+  font-family: MontserratBold, "Arial", sans-serif;
+}
+
+@mixin montserratmedium {
+  font-family: MontserratMedium, "Arial", sans-serif;
+}
+
+@mixin montserratsemibold {
+  font-family: MontserratSemiBold, "Arial", sans-serif;
+}
+
+@mixin list-reset {
+  list-style-type: none;
+  padding-left: 0;
+}

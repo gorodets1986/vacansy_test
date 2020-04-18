@@ -1,0 +1,26 @@
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-nav__city {
+  @include montserrat;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.main-nav__logo {
+  display: block;
+}
+
+.main-nav__burger {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: none;
+  }
+}

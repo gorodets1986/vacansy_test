@@ -1,0 +1,96 @@
+.tablet-nav {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .tablet-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .tablet-nav__link {
+    @include montserrat;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .tablet-nav__link:hover {
+    border-bottom: 2px solid #fe8057;
+  }
+
+  .tablet-nav__link::before {
+    content: "";
+    background-image: url("telefon.svg");
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+
+  .tablet-nav__link--teachers {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 2px solid #fe8057;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
+    text-align: center;
+  }
+
+  .tablet-menu {
+    position: absolute;
+    right: -100px;
+    top: 0;
+  }
+
+  .tablet-menu__burger {
+    width: 31px;
+    height: 32px;
+    position: absolute;
+    top: 28px;
+    right: 50px;
+  }
+
+  .tablet-users {
+    @include list-reset;
+    width: 164px;
+    border-radius: 10px 0 10px 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 87px;
+    right: 47px;
+    padding-left: 29px;
+    padding-top: 33px;
+    padding-bottom: 32px;
+    margin: 0;
+  }
+
+  .tablet-users__item {
+    margin-bottom: 20px;
+  }
+
+  .tablet-users__item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .tablet-users__link {
+    @include montserrat;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tablet-nav {
+    display: none;
+  }
+}
