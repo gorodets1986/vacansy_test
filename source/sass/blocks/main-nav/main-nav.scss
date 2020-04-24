@@ -1,7 +1,9 @@
 .main-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 248px;
+  margin: 0 auto;
 }
 
 .main-nav__city {
@@ -13,6 +15,9 @@
 
 .main-nav__logo {
   display: block;
+  width: 88px;
+  height: 88px;
+  margin-right: 18px;
 }
 
 .main-nav__burger {

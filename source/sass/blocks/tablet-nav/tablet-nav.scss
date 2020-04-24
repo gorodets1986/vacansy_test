@@ -10,6 +10,11 @@
     position: relative;
   }
 
+  .tablet-nav__logo {
+    width: 108px;
+    height: 108px;
+  }
+
   .tablet-nav__link {
     @include montserrat;
     color: #ffffff;
@@ -39,8 +44,8 @@
     text-transform: uppercase;
     border-radius: 4px;
     border: 2px solid #fe8057;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 13px;
     width: 150px;
     text-align: center;
   }

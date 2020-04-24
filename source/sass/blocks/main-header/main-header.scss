@@ -1,7 +1,7 @@
 .main-header {
-  min-height: 480px;
+  min-height: 470px;
   background-color: #778385;
-  background-image: url(header_fill.png);
+  background-image: url(../sass/blocks/main-header/header_fill.png);
   padding-top: 10px;
   position: relative;
 }
@@ -12,10 +12,9 @@
   font-size: 20px;
   font-weight: 900;
   line-height: 24px;
-  letter-spacing: 0.2px;
   text-align: center;
-  margin-bottom: 46px;
-  margin-top: 58px;
+  margin-bottom: 43px;
+  margin-top: 54px;
 }
 
 .main-header__text--orange {
@@ -35,9 +34,9 @@
   @include montserrat;
   display: block;
   padding-top: 14px;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
   margin-bottom: 60px;
-  margin-top: 66px;
+  margin-top: 64px;
   color: #ffffff;
   font-size: 12px;
   font-weight: 500;
@@ -55,18 +54,20 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    background-image: url(header_tablet.png);
-    padding-bottom: 234px;
+    background-image: url(../sass/blocks/main-header/header_tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 175px;
   }
 
   .main-header__text {
-    font-size: 36px;
+    font-size: 35px;
     font-weight: 900;
     line-height: 42px;
-    margin-left: 434px;
-    margin-top: 124px;
+    margin-left: 432px;
+    margin-top: 119px;
     text-align: left;
-    letter-spacing: 0.72px;
+    letter-spacing: 0.87px;
   }
 
   .main-header__description {
@@ -81,29 +82,29 @@
   .main-header__register {
     width: 305px;
     margin-left: 540px;
-    margin-top: 40px;
+    margin-top: 35px;
   }
 
   .main-header__down {
     display: block;
     position: absolute;
-    left: 50%;
+    left: 602px;
     bottom: 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
-    background-image: url(header_desktop.jpg);
-    padding-bottom: 305px;
+    background-image: url(../sass/blocks/main-header/header_desktop.jpg);
+    min-height: 634px;
   }
 
   .main-header__text {
     font-size: 42px;
     line-height: 48px;
     margin-left: 650px;
-    margin-top: 122px;
-    letter-spacing: 1.26px;
+    margin-top: 115px;
+    letter-spacing: 0.45px;
   }
 
   .main-header__description {
@@ -116,7 +117,7 @@
 
   .main-header__description::before {
     content: "";
-    background-image: url(stars.svg);
+    background-image: url(../sass/blocks/main-header/stars.svg);
     width: 179px;
     height: 65px;
     display: block;
@@ -127,7 +128,7 @@
 
   .main-header__register {
     margin-left: 866px;
-    margin-top: 55px;
+    margin-top: 50px;
   }
 
   .main-header__register:active {
@@ -138,7 +139,8 @@
   }
 
   .main-header__down {
-    bottom: 50px;
+    bottom: 81px;
+    left: 820px;
   }
 
   .main-header__details {
@@ -148,10 +150,10 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.48px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
     position: absolute;
-    left: 46%;
-    bottom: 10px;
+    left: 766px;
+    bottom: 30px;
   }
 }
